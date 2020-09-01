@@ -46,6 +46,37 @@ collections:
         }
 
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+  - name: 'topics' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Topics' # Used in the UI
+    label_singular: 'Topic' # Used in the UI, ie: "New Post"
+    description: >
+      Create awesome content here.
+    folder: 'src/content/topics'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}} — {{year}}/{{month}}/{{day}}'
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: 'Template', name: 'template', widget: 'hidden', default: 'topic-page'}
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - { label: 'Slug', name: 'slug', widget: 'string', hint: 'Start slug with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.'}
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          dateFormat: 'YYYY-MM-DD',
+          timeFormat: 'HH:mm',
+          format: 'YYYY-MM-DD HH:mm',
+        }
+      - { label: 'SEO Description', name: 'description', widget: 'text' }
+      - {
+          label: 'Featured Image',
+          name: 'featuredImage',
+          widget: 'image',
+          required: false,
+          tagname: ''
+        }
+
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
   - label: "Pages"
     name: "pages"
     files:
