@@ -72,7 +72,7 @@ class Navigation extends React.Component {
       <ListLink key={index} to={menuItem.path}>{menuItem.title}</ListLink>
     )
 
-    const listItems = topics.children.concat(listMenuItems)
+    const listItems = listMenuItems.concat(topics)
     return (
       <nav className="site-navigation">
         <button onClick={this.handleToggleClick} className={"menu-trigger" + (this.state.showMenu ? " is-active" : "")}>
