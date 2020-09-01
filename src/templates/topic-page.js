@@ -80,7 +80,7 @@ const Post = ({ data, pageContext }) => {
 export default Post
 
 export const pageQuery = graphql`
-  query BlogPostQuery($id: String!) {
+  query TopicPageQuery($id: String!) {
     markdownRemark( 
       id: { eq: $id }
     ) {
