@@ -74,7 +74,7 @@ class Navigation extends React.Component {
           return data.allMarkdownRemark.edges
             .filter(edge => !!edge.node.frontmatter.date)
             .map((edge, index) =>
-              <ListLink key={index + MenuItems.length} to={edge.node.slug}>{edge.node.frontmatter.title}</ListLink>
+              <ListLink key={index + MenuItems.length} to={edge.node.frontmatter.slug}>{edge.node.frontmatter.title}</ListLink>
           )
         } 
       }
