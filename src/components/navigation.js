@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
 const MenuItems = [
