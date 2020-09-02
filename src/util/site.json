@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Fard Ayn",
+    "title": "FardAyn",
     "titleTemplate": "%s",
     "description": "Knowledge incumbent on every Muslim",
-    "siteUrl": "https://foundation.stackrole.com",
-    "image": "/assets/stackrole.png",
+    "siteUrl": "https://fardayn.netlify.app",
+    "image": "/assets/mike-dorner-sf_1ZDA1YFw-unsplash.jpg",
     "twitterUsername": ""
   },
   "ga": "UA-XXXXXXXXX-X"
